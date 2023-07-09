@@ -1,11 +1,14 @@
+-- Use employee tracker database from schema file
 USE employee_tracker;
 
+-- Seed data into department table
 INSERT INTO department (department_name) VALUES
     ('Engineering'),
     ('Finance'),
     ('Legal'),
     ('Sales');
 
+-- Seed data into roles table
 INSERT INTO roles (title, salary, department_id) VALUES
     ('Sales Lead', 100000, 4),
     ('Salesperson', 80000, 4),
@@ -16,6 +19,7 @@ INSERT INTO roles (title, salary, department_id) VALUES
     ('Legal Team Lead', 250000, 3),
     ('Lawyer', 190000, 3);
 
+-- Seed data into employee table
 INSERT INTO employee (
     first_name,
     last_name,
