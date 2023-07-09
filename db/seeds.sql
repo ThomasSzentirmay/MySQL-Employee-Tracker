@@ -2,7 +2,7 @@
 USE employee_tracker;
 
 -- Seed data into department table
-INSERT INTO department (department_name) VALUES
+INSERT INTO departments (name) VALUES
     ('Engineering'),
     ('Finance'),
     ('Legal'),
@@ -20,16 +20,16 @@ INSERT INTO roles (title, salary, department_id) VALUES
     ('Lawyer', 190000, 3);
 
 -- Seed data into employee table
-INSERT INTO employee (
+INSERT INTO employees (
     first_name,
     last_name,
-    roles_id,
+    role_id,
     manager_id
 ) VALUES
     ('Thomas', 'Szentirmay', 4, 2),
     ('Jordan', 'Mayhitch', 3, NULL),
     ('Frank', 'Doolan', 6, 5),
     ('Emily', 'May', 6, 5),
-    ('Maya', 'Thompson', 7, NULL),
+    ('Maya', 'Thompson', 5, NULL),
     ('Rob', 'Devon', 8, NULL),
     ('Clide', 'Claronet', 2, NULL);
