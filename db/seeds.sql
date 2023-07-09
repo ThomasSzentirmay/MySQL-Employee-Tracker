@@ -1,6 +1,8 @@
 -- Use employee tracker database from schema file
 USE employee_tracker;
 
+SET FOREIGN_KEY_CHECKS = 0;
+
 -- Seed data into department table
 INSERT INTO departments (name) VALUES
     ('Engineering'),
